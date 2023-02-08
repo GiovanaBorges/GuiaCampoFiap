@@ -1,24 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-red-600: #DC2626;
+    --bg-red-500:#EF4444; 
+    --bg-red-400:#F87171;
+    --bg-red-300: #FCA5A5;
+    --bg-zinc-900: #18181B;
+    --bg-stone-900:#1C1917;
+    --bg-white:#F2F2F2;
+    --bg-zinc-50:#FAFAFA;
+    --bg-zinc-600:#52525B;
+    --bg-zinc-500:#71717A;
+    --bg-zinc-400:#A1A1AA;
+    --bg-zinc-200:#E4E4E7;
+}
+
 body{
     background-color: rgb(233, 231, 229);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+main{
+    font-family: 'Poppins',sans-serif;
+}
+
 
 /* navbar */
 .navbar{
-    background-color: #DC2626;
+    background-color: var(--bg-red-600);
 }
 
 /* right section conteiner*/
 #sectionright{
-    position: absolute;
-    display: inline-block;
-    width: 40%;
-    border: 2px solid;
-    margin: 10px;
-    text-align: center;
-    height: 78vmin;
+    
+    padding:0;
+    margin:0;
+}
+
+.sectionright__image{
+    background-color: var(--bg-red-600);
+
+    min-height: 90vh;
+    padding:0.5rem;
+    
     
 }
+
 
 /* text right section */
 .sectextright{
@@ -65,28 +96,60 @@ body{
     position: absolute;
     display: inline-block;
     right: 0;
-    width: 58%;
-    border: 2px solid;
+    width: 50%;
+    
     margin: 10px ;
-    background-color: #DC2626;
-    height: 78vmin;
+    background-color: var(--bg-red-600);
+    height: 80vmin;
 }
 
 /* img left section */
 .imgsecleft{
-     margin-top: 10vmin;
-     width: 100%;
+     width: 80%;
 
  }
 
+
+ #services{
+    min-height: 100vh;
+    
+ }
+
+
+
+ #services .row{
+    height:100vh;
+ }
+
+ #contribuintes .card_contri{
+    background-color: #EBE1E0;
+    border-radius: 15px;
+    
+ }
+
+ #contribuintes .card_contri img{
+    width:80%;
+ }
+
+
+ #phases .card_contri img{
+    width:80%;
+ }
+
+ #phases .card_contri{
+    background-color: #EBE1E0;
+    border-radius: 15px;
+    
+ }
 /* footer */
- #footer {
+ 
+footer {
     text-align: center;
-     background-color: #DC2626;
+     background-color: var(--bg-red-600);
      padding: 10px 0;
      bottom: 0;
      border: solid 1px;
-     position: fixed;
+    
      width: 100%;
  }
 
@@ -94,4 +157,61 @@ body{
 .imglogofooter{
     display: inline-block ;
     width: 30px;
+}
+
+.btn-primary{
+    background-color: var(--bg-red-500);
+    border: none;
+
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.btn-primary:hover{
+    background-color: var(--bg-red-500);
+    border: none;
+    opacity: 1;
+}
+
+
+/* fonts */
+.title{
+    font-size: 3.3rem;
+}
+
+.text{
+    font-size: 1.3rem;
+}
+
+/* fonts weight */
+
+.font800{
+    font-weight: 800;
+}
+
+.font700{
+    font-weight: 700;
+}
+
+.font600{
+    font-weight: 600;
+}
+
+.font500{
+    font-weight: 500;
+}
+.font400{
+    font-weight: 400;
+}
+
+.font300{
+    font-weight: 300;
+}
+
+.font200{
+    font-weight: 200;
+}
+
+.font100{
+    font-weight: 100;
 }
