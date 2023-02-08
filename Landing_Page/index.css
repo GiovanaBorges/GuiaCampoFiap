@@ -36,17 +36,13 @@ main{
 
 /* right section conteiner*/
 #sectionright{
-    
-    padding:0;
-    margin:0;
-}
-
-.sectionright__image{
-    background-color: var(--bg-red-600);
-
-    min-height: 90vh;
-    padding:0.5rem;
-    
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    border: 2px solid;
+    margin: 10px;
+    text-align: center;
+    height: 78vmin;
     
 }
 
@@ -96,8 +92,8 @@ main{
     position: absolute;
     display: inline-block;
     right: 0;
-    width: 50%;
-    
+    width: 58%;
+    border: 2px solid;
     margin: 10px ;
     background-color: var(--bg-red-600);
     height: 80vmin;
