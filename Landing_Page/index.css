@@ -13,7 +13,6 @@ body{
     position: absolute;
     display: inline-block;
     width: 40%;
-    border: 2px solid;
     margin: 10px;
     text-align: center;
     height: 78vmin;
@@ -66,7 +65,6 @@ body{
     display: inline-block;
     right: 0;
     width: 58%;
-    border: 2px solid;
     margin: 10px ;
     background-color: #DC2626;
     height: 78vmin;
