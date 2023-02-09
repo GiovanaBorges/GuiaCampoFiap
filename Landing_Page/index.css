@@ -36,21 +36,14 @@ main{
 
 /* right section conteiner*/
 #sectionright{
-    position: absolute;
-    display: inline-block;
-    width: 40%;
-    border: 2px solid;
-    margin: 10px;
-    text-align: center;
-    height: 78vmin;
+    height: 80vmin;
     
 }
 
+#sectionright .row{
+    height:100vh;
+ }
 
-/* text right section */
-.sectextright{
-    margin: 30vmin auto;
-}
 
 
 .sectextright h2{
@@ -59,33 +52,8 @@ main{
     
 }
 
-.sectextright p{
-    font-size: 26px;
-}
 
 
-/* button righ sectio shape */
-.secrightbutton {
-    
-    border-radius: 12px;
-    width: 110px;
-    font-size: large;
-    margin-top: 15px;   
-    background-color: #EF4444;
-    font: bold;
-    border: none;
-}
-
-/* text inside button behavior */
-.secrightbuttontext{
-    color: white;
-    text-decoration: none;
-}
-/* button right section on clicked */
-.secrightbutton:hover {
-    opacity: 70%;
-    transition: 0.5s;
-}
 
 /* left section conteiner  */
 #sectionleft{
@@ -108,7 +76,6 @@ main{
 
  #services{
     min-height: 100vh;
-    
  }
 
 
@@ -116,6 +83,11 @@ main{
  #services .row{
     height:100vh;
  }
+
+ #ask{
+    min-height: 100vh;
+ }
+
 
  #contribuintes .card_contri{
     background-color: #EBE1E0;
