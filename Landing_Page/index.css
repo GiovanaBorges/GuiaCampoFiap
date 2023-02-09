@@ -8,6 +8,8 @@
     --bg-red-600: #DC2626;
     --bg-red-500:#EF4444; 
     --bg-red-400:#F87171;
+    --bg-reddark-100 : #730202;
+    --bg-reddark-200: #400101;
     --bg-red-300: #FCA5A5;
     --bg-zinc-900: #18181B;
     --bg-stone-900:#1C1917;
@@ -20,7 +22,9 @@
 }
 
 body{
-    background-color: rgb(233, 231, 229);
+    background-color: var(--bg-white);
+    color:var(--bg-zinc-900);
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -31,12 +35,12 @@ main{
 
 /* navbar */
 .navbar{
-    background-color: var(--bg-red-600);
+    background-color: var(--bg-reddark-100);
 }
 
 /* right section conteiner*/
 #sectionright{
-    height: 80vmin;
+    height: 100vh;
     
 }
 
@@ -90,7 +94,7 @@ main{
 
 
  #contribuintes .card_contri{
-    background-color: #EBE1E0;
+    background-color: var(--bg-zinc-200);
     border-radius: 15px;
     
  }
@@ -105,7 +109,7 @@ main{
  }
 
  #phases .card_contri{
-    background-color: #EBE1E0;
+    background-color: var(--bg-zinc-200);
     border-radius: 15px;
     
  }
@@ -113,10 +117,10 @@ main{
  
 footer {
     text-align: center;
-     background-color: var(--bg-red-600);
+     background-color: var(--bg-stone-900);
      padding: 10px 0;
      bottom: 0;
-     border: solid 1px;
+     
     
      width: 100%;
  }
@@ -182,4 +186,37 @@ footer {
 
 .font100{
     font-weight: 100;
+}
+
+#modeDark{
+    display:none;
+}
+
+.form-control{
+    background-color: var(--bg-zinc-200);
+}
+
+.form-control::placeholder{
+    color:var(--bg-zinc-900);
+}
+
+.form-control:focus{
+    background-color: var(--bg-zinc-200);
+}
+
+
+.accordion-button{
+    background-color: var(--bg-zinc-200);
+    color:var(--bg-zinc-900);
+}
+
+.accordion-button:focus{
+    background-color: var(--bg-zinc-400);
+    color:var(--bg-zinc-900);
+}
+
+
+.accordion-item{
+    background-color: var(--bg-zinc-200);
+    color:var(--bg-zinc-900);
 }
