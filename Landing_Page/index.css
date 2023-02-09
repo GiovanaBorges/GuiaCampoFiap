@@ -196,7 +196,7 @@ footer {
     background-color: var(--bg-zinc-200);
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color:var(--bg-zinc-900);
 }
 
@@ -219,4 +219,27 @@ footer {
 .accordion-item{
     background-color: var(--bg-zinc-200);
     color:var(--bg-zinc-900);
+}
+
+
+#doar{
+    background-color: var(--bg-red-600);
+    min-height:30vh;
+}
+
+#doar a{
+    background-color: #18181B;
+    color:white;
+
+    border-radius:10px;
+    font-style: none;
+    text-decoration: none;
+
+    opacity: 0.8;
+
+    transition:0.5s;
+}
+
+#doar a:hover{
+    opacity: 1;
 }
