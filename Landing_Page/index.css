@@ -91,6 +91,11 @@ main{
     
  }
 
+
+.icon_img{
+    border-radius: 50%;
+}
+
  #contribuintes .card_contri img{
     width:80%;
  }
