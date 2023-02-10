@@ -26,6 +26,7 @@ body{
     color:var(--bg-zinc-900);
 
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 main{
@@ -38,15 +39,6 @@ main{
     background-color: var(--bg-reddark-100);
 }
 
-/* right section conteiner*/
-#sectionright{
-    height: 100vh;
-    
-}
-
-#sectionright .row{
-    height:100vh;
- }
 
 
 
