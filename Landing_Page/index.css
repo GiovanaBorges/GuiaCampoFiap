@@ -19,7 +19,10 @@
     --bg-zinc-500:#71717A;
     --bg-zinc-400:#A1A1AA;
     --bg-zinc-200:#E4E4E7;
-}
+    }
+   
+ 
+
 
 body{
     background-color: var(--bg-white);
@@ -40,16 +43,11 @@ main{
 }
 
 
-
-
 .sectextright h2{
     font-size: 40px;
     font-weight: bold;
     
 }
-
-
-
 
 /* left section conteiner  */
 #sectionleft{
@@ -191,6 +189,7 @@ footer {
 
 .form-control{
     background-color: var(--bg-zinc-200);
+
 }
 
 .form-control::placeholder {
@@ -240,3 +239,4 @@ footer {
 #doar a:hover{
     opacity: 1;
 }
+

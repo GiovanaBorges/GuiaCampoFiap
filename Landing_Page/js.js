@@ -7,7 +7,7 @@ function lightMode(){
     root.style.setProperty('--bg-white', light.bg);
     root.style.setProperty('--bg-zinc-900',light.text);
     root.style.setProperty('--bg-zinc-200', light.bgCard);
-
+    
     setLocalStorageLight()
 
     document.getElementById("modeLight").style.display="block"
@@ -22,15 +22,14 @@ function darkMode(){
     root.style.setProperty('--bg-white',dark.bg);
     root.style.setProperty('--bg-zinc-900',dark.text);
     root.style.setProperty('--bg-zinc-200', dark.bgCard);
-
     setLocalStorageDark()
 
     document.getElementById("modeDark").style.display="block"
     document.getElementById("modeLight").style.display="none"
+    
 
   
 }
-
 
 // save info on local storage
 
@@ -55,12 +54,7 @@ const dark = {
 
 const light = {
     bg : "#F2F2F2",
-    text: "#1C1917",
+    text: "black",
     bgCard:"#E4E4E7"
 }
 
-window.addEventListener("load", (event) => {
-    root.style.setProperty('--bg-white',localStorage.getItem("bg")?localStorage.getItem("bg"): light.bg);
-    root.style.setProperty('--bg-zinc-900',localStorage.getItem("text")?localStorage.getItem("text"):light.text);
-    root.style.setProperty('--bg-zinc-200',localStorage.getItem("card")?localStorage.getItem("card"): light.bgCard);
-  });
