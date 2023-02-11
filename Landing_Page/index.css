@@ -108,6 +108,12 @@ main{
     border-radius: 15px;
     
  }
+
+form textarea{
+    margin-top: 10px;
+    resize: none;
+}
+
 /* footer */
  
 footer {
