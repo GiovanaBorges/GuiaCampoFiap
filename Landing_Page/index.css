@@ -30,7 +30,6 @@ body{
         #FFFFFF );
       
     color:var(--bg-zinc-900);
-
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
@@ -44,9 +43,26 @@ main{
     background:none;
 }
 /* img left section */
-.imgsecleft{
-     width: 90%;  
 
+.img1{
+    margin-right: 6vh;
+    margin-top: 9vh;
+    width: 100%;
+    box-shadow: 20px 25px 10px #171435;
+
+}
+
+.img2{
+    margin-left: 4vh;
+    margin-top: 9vh;
+    width: 100%;
+    box-shadow: 20px 25px 10px #171435;
+
+ }
+
+ .imgform{
+    width: 100%;
+    box-shadow: 20px 25px 10px #171435;
  }
 
  #services{
@@ -71,13 +87,22 @@ main{
     
     background-color: #8F8AC0;
     border-radius: 15px;   
+    box-shadow: 10px 10px 10px 8px #262061;
  }
 
 /*  div doar */
 #doar {
+    
+   border: none;
+   border-radius: 1vh;
+    margin: 5vh ;
     min-height: 30vh;
 }
 
+#doar h1{
+    
+    font-weight: bold;
+}   
 /* button doar */
 #doar a {
     background: linear-gradient(to bottom, #F62F63, #8F8AC0) ;
@@ -99,7 +124,9 @@ form{
     background: linear-gradient(to bottom, #F62F63, #8F8AC0);
     height: 80vh;
     border-radius: 10px;
-    margin-bottom: 1vh;
+    margin: 2vh;
+
+    
 }
 
 form textarea{
