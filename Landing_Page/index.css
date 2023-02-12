@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    
 }
 
 :root{
@@ -20,9 +21,6 @@
     --bg-zinc-400:#A1A1AA;
     --bg-zinc-200:#E4E4E7;
     }
-   
- 
-
 
 body{
     background-color: var(--bg-white);
@@ -36,34 +34,15 @@ main{
     font-family: 'Poppins',sans-serif;
 }
 
-
 /* navbar */
 .navbar{
-    background-color: var(--bg-reddark-100);
-}
-
-
-.sectextright h2{
-    font-size: 40px;
-    font-weight: bold;
-    
-}
-
-/* left section conteiner  */
-#sectionleft{
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    width: 58%;
-    border: 2px solid;
-    margin: 10px ;
-    background-color: var(--bg-red-600);
-    height: 80vmin;
+    background: linear-gradient(to bottom, #db0c0c, #360202);
 }
 
 /* img left section */
 .imgsecleft{
-     width: 80%;
+     width: 90%;
+    
 
  }
 
@@ -71,8 +50,6 @@ main{
  #services{
     min-height: 100vh;
  }
-
-
 
  #services .row{
     height:100vh;
@@ -82,37 +59,56 @@ main{
     min-height: 100vh;
  }
 
-
- #contribuintes .card_contri{
-    background-color: var(--bg-zinc-200);
-    border-radius: 15px;
-    
- }
-
-
 .icon_img{
     border-radius: 50%;
 }
 
- #contribuintes .card_contri img{
-    width:80%;
- }
-
-
- #phases .card_contri img{
-    width:80%;
- }
-
+/* cards Fases  */
  #phases .card_contri{
-    background-color: var(--bg-zinc-200);
-    border-radius: 15px;
     
+    background: linear-gradient(to bottom, rgb(168, 167, 167), rgb(230, 222, 222),white);
+    border-radius: 15px;   
  }
+
+/*  div doar */
+#doar {
+    background: linear-gradient(to bottom, rgb(245, 241, 242), #470303, #920707, rgb(245, 241, 242));
+    background-size: 100% 300%;
+    min-height: 30vh;
+}
+
+/* button doar */
+#doar a {
+    background: linear-gradient(to top, rgb(88, 5, 5),
+            rgb(138, 12, 12), rgb(185, 11, 11), rgb(190, 171, 171));
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+#doar a:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+ /* form section */
+form{
+    background: linear-gradient(to bottom, rgb(245, 242, 242), #5f0505, #850505, #cf3232, rgb(245, 241, 242));
+
+    background-size: 100% 400%;
+    height: 80vh;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
 
 form textarea{
     margin-top: 10px;
     resize: none;
 }
+
 
 /* footer */
  
@@ -121,30 +117,10 @@ footer {
      background-color: var(--bg-stone-900);
      padding: 10px 0;
      bottom: 0;
-     
-    
      width: 100%;
  }
 
-/* footer logo */
-.imglogofooter{
-    display: inline-block ;
-    width: 30px;
-}
 
-.btn-primary{
-    background-color: var(--bg-red-500);
-    border: none;
-
-    opacity: 0.8;
-    transition: 0.5s;
-}
-
-.btn-primary:hover{
-    background-color: var(--bg-red-500);
-    border: none;
-    opacity: 1;
-}
 
 
 /* fonts */
@@ -223,26 +199,17 @@ footer {
     color:var(--bg-zinc-900);
 }
 
-
-#doar{
-    background-color: var(--bg-red-600);
-    min-height:30vh;
+.btn-primary, .btn{
+    
+    background: var(--bg-red-400);
+    font-weight: bold;
+    border:none;
 }
 
-#doar a{
-    background-color: #18181B;
-    color:white;
-
-    border-radius:10px;
-    font-style: none;
-    text-decoration: none;
-
-    opacity: 0.8;
-
-    transition:0.5s;
+ .btn:hover{
+    background: var(--bg-red-400);
+        font-weight: bold;
+        border: none;
+        opacity: 0.7;
+        transition: all 0.5s;
 }
-
-#doar a:hover{
-    opacity: 1;
-}
-

@@ -43,6 +43,7 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Templates de estudo</a></li>
           <li><a class="dropdown-item" href="#">Quem somos</a></li>
+          <li><a class="dropdown-item" href="#">Contatos</a></li>
 
         </ul>
       </div>
@@ -65,11 +66,6 @@
           <li><a class="dropdown-item" href="#">Fase 5</a></li>
         </ul>
       </li>
-
-      <!-- botton contato -->
-      <button class="btn btn-primary my-2 my-sm-0">
-        Contato
-      </button>
 
       <!-- Botton dark mode -->
       <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="darkMode()"
@@ -106,7 +102,7 @@
         </div>
 
         <div class="col d-flex justify-content-center align-items-center mb-5"
-          style="background-color: var(--bg-reddark-100 );height: 100vh;">
+           style="background: linear-gradient(to bottom, #360202, #5f0505, #850505, #cf3232 ,rgb(245, 241, 242));height: 100vh;">
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
             alt="image of computer with code" class="imgsecleft">
@@ -152,11 +148,12 @@
       </section>
 
   <!-- section contribuidores -->
-  <section id=" contribuintes" align="center">
+  <section  align=" center">
               <h1 class="font500 mb-3 mx-4">Contribuidores do projeto</h1>
               <h3 class="font300 mt-3 mb-5 mx-4">Pessoas que fizeram o projeto se tornar real. </h3>
 
-              <div class="container-fluid " style="background-color: var(--bg-red-500);">
+              <div class="container-fluid"
+                style="background: linear-gradient(to bottom,rgb(245, 242, 242), #5f0505, #850505, #cf3232 ,rgb(245, 241, 242))">
                 <div class="row">
                   <div class="col card_contri d-flex flex-column p-5 m-5">
                     <img class="mx-auto icon_img" src="https://avatars.githubusercontent.com/u/56007863?v=4" alt="">
@@ -199,14 +196,14 @@
               </div>
     </section>
 
-
     <!-- section cards das fases -->
-    <section id="phases"  align="center">
+    <section id="phases" align="center">
       <h1 class="font500 mb-3 mx-4 mt-5 pt-5" ">Fases</h1>
       <h3 class=" font300 mt-3 mb-5 mx-4">todas as fases da Fiap que abordamos. </h3>
 
         <!-- div fases -->
-        <div class="container-fluid" style="background-color: var(--bg-reddark-200);">
+        <div class="container-fluid"
+          style="background: linear-gradient(to bottom,rgb(245, 242, 242), #880909,rgb(245, 242, 242));">
           <div class="row">
 
             <!-- fase 1 -->
@@ -419,74 +416,76 @@
       <a href="#" class="p-3 mt-5">Doar</a>
     </div>
 
+
     <!-- Section Form -->
+    <section id="form">
 
-      <section id="form" style="height: 80vh;">
-
-        <div class="row">
-          <div class="col d-flex flex-column justify-content-center align-items-center">
-            <h1>Entre em contato conosco</h1>
-            <h5 class="mb-5">Vamos fazer networking</h5>
-            <img src="./assets/img/fiap.jpg" alt="" class="imgsecleft">
-
-          </div>
-          <div class="col d-flex flex-column justify-content-center ">
-            <div>
-              <!-- Form -->
-              <form class="p-5" id="form_email" style="background-color: var(--bg-red-600);border-radius: 15px;">
-                <fieldset>
-                  <h1 class="font200">Preencha os campos abaixos</h1>
-                  <div class="mb-3">
-                    <label for="textInput" class="form-label">Nome</label>
-                    <input type="text" id="nameInput" class="form-control" placeholder="Digite seu nome"
-                      style="color: var(--text-white); caret-color: var(--text-white);">
-                  </div>
-                  <div class="mb-3">
-                    <label for="textInput" class="form-label">Email</label>
-                    <input type="text" id="emailInput" class="form-control" placeholder="Digite seu E-mail"
-                      style="color: var(--text-white); caret-color: var(--text-white);">
-                  </div>
-                  <div class="mb-3">
-                    <label for="textInput" class="form-label">Celular</label>
-                    <input type="text" id="phoneInput" class="form-control" placeholder="Digite seu celular"
-                      style="color: var(--text-white); caret-color: var(--text-white);">
-                  </div>
-
-                  <div class="mb-3">
-
-                    <legend style="font-size: 20px;">Mensagem</legend>
-                    <fieldset>
-                      <textarea class="form-control" id="msgInput" aria-label="Digite sua mensagem"
-                        style="color: var(--text-white); caret-color: var(--text-white);"
-                        placeholder="Digite aqui..."></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="mb-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="fieldsetCheck">
-                      <label class="form-check-label" for="fieldsetCheck">
-                        Consentimento com uso dos dados.
-                      </label>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="emailCheck">
-                      <label class="form-check-label" for="fieldsetCheck">
-                        Desejo ser respondido(a) por email
-                      </label>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </fieldset>
-              </form>
-
-            </div>
-          </div>
+      <div class="row">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
+          <h1>Entre em contato conosco</h1>
+          <h5 class="mb-5">Vamos fazer networking</h5>
+          <img src="./assets/img/fiap.jpg" alt="" class="imgsecleft">
 
         </div>
+        <div class="col d-flex flex-column justify-content-center ">
+          <div>
+            <!-- Form -->
+            <form class="p-5" id="form_email">
+              <fieldset>
+                <h1 class="font200">Preencha os campos abaixos</h1>
+                <div class="mb-3">
+                  <label for="textInput" class="form-label">Nome</label>
+                  <input type="text" id="nameInput" class="form-control" placeholder="Digite seu nome"
+                    style="color: var(--text-white); caret-color: var(--text-white);">
+                </div>
+                <div class="mb-3">
+                  <label for="textInput" class="form-label">Email</label>
+                  <input type="text" id="emailInput" class="form-control" placeholder="Digite seu E-mail"
+                    style="color: var(--text-white); caret-color: var(--text-white);">
+                </div>
+                <div class="mb-3">
+                  <label for="textInput" class="form-label">Celular</label>
+                  <input type="text" id="phoneInput" class="form-control" placeholder="Digite seu celular"
+                    style="color: var(--text-white); caret-color: var(--text-white);">
+                </div>
 
-      </section>
+                <div class="mb-3">
+
+                  <legend style="font-size: 20px;">Mensagem</legend>
+                  <fieldset>
+                    <textarea class="form-control" id="msgInput" aria-label="Digite sua mensagem"
+                      style="color: var(--text-white); caret-color: var(--text-white);"
+                      placeholder="Digite aqui..."></textarea>
+                  </fieldset>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="fieldsetCheck">
+                    <label class="form-check-label" for="fieldsetCheck">
+                      Consentimento com uso dos dados.
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="emailCheck">
+                    <label class="form-check-label" for="fieldsetCheck">
+                      Desejo ser respondido(a) por email
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </fieldset>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
 
 
 
