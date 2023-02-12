@@ -23,7 +23,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-5 py-3 text-white">
+  <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-5 py-3">
 
     <div class="d-flex align-items-center">
       <a class="navbar-brand" href="#">
@@ -53,7 +53,7 @@
     <!-- dropdown fases -->
     <ul class="navbar-nav">
       <li class="nav-item dropdown mx-4 " id="dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="fases.html" role="button" data-bs-toggle="dropdown"
+        <a class="nav-link dropdown-toggle  href="fases.html" role="button" data-bs-toggle="dropdown" style="color: var(--text-white); caret-color: var(--text-white)"
           aria-expanded="false">
           Fases
         </a>
@@ -87,7 +87,7 @@
   <main>
 
     <!-- Section Guia de Campo -->
-    <section id="home">
+  <section id="home">
 
       <div class="row mb-5">
         <div class="col d-flex flex-column justify-content-center">
@@ -101,8 +101,7 @@
 
         </div>
 
-        <div class="col d-flex justify-content-center align-items-center mb-5"
-           style="background: linear-gradient(to bottom, #360202, #5f0505, #850505, #cf3232 ,rgb(245, 241, 242));height: 100vh;">
+        <div class="col d-flex justify-content-center align-items-center mb-5" sytle="height: 100vh;">
           <img
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
             alt="image of computer with code" class="imgsecleft">
@@ -112,7 +111,7 @@
     </section>
 
     <!--section o que oferecemos  -->
-    <section id="services" style="height: 100vh;">
+  <section id="services" style="height: 100vh; margin-top">
       <div class="row">
         <div class="col d-flex justify-content-center align-items-center">
 
@@ -145,15 +144,14 @@
             </div>
         
         </div>
-      </section>
+    </section>
 
   <!-- section contribuidores -->
   <section  align=" center">
               <h1 class="font500 mb-3 mx-4">Contribuidores do projeto</h1>
               <h3 class="font300 mt-3 mb-5 mx-4">Pessoas que fizeram o projeto se tornar real. </h3>
 
-              <div class="container-fluid"
-                style="background: linear-gradient(to bottom,rgb(245, 242, 242), #5f0505, #850505, #cf3232 ,rgb(245, 241, 242))">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="col card_contri d-flex flex-column p-5 m-5">
                     <img class="mx-auto icon_img" src="https://avatars.githubusercontent.com/u/56007863?v=4" alt="">
@@ -202,8 +200,7 @@
       <h3 class=" font300 mt-3 mb-5 mx-4">todas as fases da Fiap que abordamos. </h3>
 
         <!-- div fases -->
-        <div class="container-fluid"
-          style="background: linear-gradient(to bottom,rgb(245, 242, 242), #880909,rgb(245, 242, 242));">
+        <div class="container-fluid">
           <div class="row">
 
             <!-- fase 1 -->
@@ -292,17 +289,19 @@
     </section>
 
     <!-- section Dúvidas -->
-    <section id="ask">
+    <section id="ask" >
       <h1 class="font500 mb-3 mx-4 mt-5 pt-5 text-center">Dúvidas Frequentes</h1>
 
 
       <div class="accordion mx-auto" id="accordionExample" style="width: 60%;">
-        <div class="accordion-item">
+        <div class="accordion-item" >
           <h2 class="accordion-header" id="headingOne">
+
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
               aria-expanded="true" aria-controls="collapseOne">
               O que são Fases ?
             </button>
+
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
@@ -318,10 +317,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
+
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Por que criaram esse projeto ?
             </button>
+
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
@@ -335,10 +336,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
+
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               O que vocês acham do conteúdo da Fiap ?
             </button>
+
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
@@ -352,10 +355,12 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
+
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Como é estudar na Fiap ?
             </button>
+            
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
@@ -410,12 +415,11 @@
     </section>
 
     <!-- div doar -->
-    <div id="doar" class="p-5 mb-5 text-center">
+    <div id="doar" class="p-5 mb-5 text-center" >
       <h1 class="font200">Doe para o projeto </h1>
       <h4 class="font400 mb-5">Demonstre seu apoio doando para o projeto</h4>
       <a href="#" class="p-3 mt-5">Doar</a>
     </div>
-
 
     <!-- Section Form -->
     <section id="form">
@@ -484,10 +488,6 @@
       </div>
 
     </section>
-
-
-
-
 
   </main>
 

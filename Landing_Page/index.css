@@ -23,7 +23,12 @@
     }
 
 body{
-    background-color: var(--bg-white);
+    background: linear-gradient(to bottom, #c9374f,#F62F63,
+        #171435,
+        #8F8AC0,
+        #8F8AC0,
+        #FFFFFF );
+      
     color:var(--bg-zinc-900);
 
     font-family: 'Poppins', sans-serif;
@@ -36,16 +41,13 @@ main{
 
 /* navbar */
 .navbar{
-    background: linear-gradient(to bottom, #db0c0c, #360202);
+    background:none;
 }
-
 /* img left section */
 .imgsecleft{
-     width: 90%;
-    
+     width: 90%;  
 
  }
-
 
  #services{
     min-height: 100vh;
@@ -66,21 +68,19 @@ main{
 /* cards Fases  */
  #phases .card_contri{
     
-    background: linear-gradient(to bottom, rgb(168, 167, 167), rgb(230, 222, 222),white);
+    
+    background-color: #8F8AC0;
     border-radius: 15px;   
  }
 
 /*  div doar */
 #doar {
-    background: linear-gradient(to bottom, rgb(245, 241, 242), #470303, #920707, rgb(245, 241, 242));
-    background-size: 100% 300%;
     min-height: 30vh;
 }
 
 /* button doar */
 #doar a {
-    background: linear-gradient(to top, rgb(88, 5, 5),
-            rgb(138, 12, 12), rgb(185, 11, 11), rgb(190, 171, 171));
+    background: linear-gradient(to bottom, #F62F63, #8F8AC0) ;
     border: none;
     border-radius: 5px;
     color: white;
@@ -96,9 +96,7 @@ main{
 }
  /* form section */
 form{
-    background: linear-gradient(to bottom, rgb(245, 242, 242), #5f0505, #850505, #cf3232, rgb(245, 241, 242));
-
-    background-size: 100% 400%;
+    background: linear-gradient(to bottom, #F62F63, #8F8AC0);
     height: 80vh;
     border-radius: 10px;
     margin-bottom: 1vh;
@@ -109,7 +107,6 @@ form textarea{
     resize: none;
 }
 
-
 /* footer */
  
 footer {
@@ -119,9 +116,6 @@ footer {
      bottom: 0;
      width: 100%;
  }
-
-
-
 
 /* fonts */
 .title{
@@ -171,7 +165,7 @@ footer {
 
 .form-control{
     background-color: var(--bg-zinc-200);
-
+    border:none;
 }
 
 .form-control::placeholder {
@@ -182,10 +176,16 @@ footer {
     background-color: var(--bg-zinc-200);
 }
 
+/* cor do checkbox clicado */
+input[type="checkbox"]:checked {
+    background-color: var(--bg-zinc-600);
+}
 
 .accordion-button{
-    background-color: var(--bg-zinc-200);
+    background: linear-gradient(to bottom, #F62F63, #8F8AC0);
     color:var(--bg-zinc-900);
+    border: none;
+
 }
 
 .accordion-button:focus{
@@ -195,21 +195,24 @@ footer {
 
 
 .accordion-item{
-    background-color: var(--bg-zinc-200);
-    color:var(--bg-zinc-900);
+    background: none;
+    border:none
 }
 
 .btn-primary, .btn{
     
-    background: var(--bg-red-400);
+    background: linear-gradient(to bottom, #F62F63, #8F8AC0);
     font-weight: bold;
     border:none;
+    
 }
 
+
  .btn:hover{
-    background: var(--bg-red-400);
+        background: linear-gradient(to bottom, #F62F63, #8F8AC0);
         font-weight: bold;
         border: none;
-        opacity: 0.7;
+        opacity: 0.9;
         transition: all 0.5s;
+        
 }
