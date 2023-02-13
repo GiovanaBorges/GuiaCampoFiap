@@ -23,16 +23,12 @@
     }
 
 body{
-    background: linear-gradient(to bottom, #c9374f,#F62F63,
-        #171435,
-        #8F8AC0,
-        #8F8AC0,
-        #FFFFFF );
-      
+    background-color: var(--bg-reddark-100);
     color:var(--bg-zinc-900);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
 
 main{
     font-family: 'Poppins',sans-serif;
@@ -41,6 +37,7 @@ main{
 /* navbar */
 .navbar{
     background:none;
+    font-weight: bold
 }
 /* img left section */
 
@@ -48,21 +45,27 @@ main{
     margin-right: 6vh;
     margin-top: 9vh;
     width: 100%;
-    box-shadow: 20px 25px 10px #171435;
-
+    background-color: #6d0606;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #DC2626;
 }
 
 .img2{
     margin-left: 4vh;
     margin-top: 9vh;
     width: 100%;
-    box-shadow: 20px 25px 10px #171435;
-
+    background-color: #6d0606;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #DC2626;
+    
  }
 
  .imgform{
     width: 100%;
-    box-shadow: 20px 25px 10px #171435;
+    background-color: #6d0606;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px 7px #DC2626;
+    
  }
 
  #services{
@@ -73,6 +76,14 @@ main{
     height:100vh;
  }
 
+
+.contribimg{
+    background-color: #6d0606;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px 5px #DC2626;
+        color: white;
+}
+
  #ask{
     min-height: 100vh;
  }
@@ -82,17 +93,15 @@ main{
 }
 
 /* cards Fases  */
- #phases .card_contri{
-    
-    
-    background-color: #8F8AC0;
-    border-radius: 15px;   
-    box-shadow: 10px 10px 10px 8px #262061;
+ #phases .card_contri{ 
+    margin-top: 3vh;
+    background-color: #6d0606;
+    border-radius: 15px;    
+    box-shadow: 10px 10px 10px 10px #DC2626;
  }
 
 /*  div doar */
 #doar {
-    
    border: none;
    border-radius: 1vh;
     margin: 5vh ;
@@ -105,12 +114,16 @@ main{
 }   
 /* button doar */
 #doar a {
-    background: linear-gradient(to bottom, #F62F63, #8F8AC0) ;
+    background: linear-gradient(0deg, rgba(248, 113, 113, 1) 22%, rgba(115, 2, 2, 1) 59%, rgba(64, 1, 1, 1) 80%);
     border: none;
     border-radius: 5px;
     color: white;
     text-align: center;
     text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #DC2626;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 
 
 }
@@ -119,16 +132,20 @@ main{
     opacity: 0.8;
     transition: all 0.5s;
 }
+
+
+
  /* form section */
 form{
-    background: linear-gradient(to bottom, #F62F63, #8F8AC0);
+    border-top: solid 2px rgba(248, 113, 113, 1);
     height: 80vh;
     border-radius: 10px;
-    margin: 2vh;
-
-    
+    margin: 2vh;   
 }
 
+form label,legend,h1{
+    font-weight: bold;
+}
 form textarea{
     margin-top: 10px;
     resize: none;
@@ -205,41 +222,52 @@ footer {
 
 /* cor do checkbox clicado */
 input[type="checkbox"]:checked {
-    background-color: var(--bg-zinc-600);
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px white;
+       
 }
 
 .accordion-button{
-    background: linear-gradient(to bottom, #F62F63, #8F8AC0);
-    color:var(--bg-zinc-900);
+    background-color: #6d0606;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 5px #DC2626;
+    color: white;
     border: none;
 
 }
 
 .accordion-button:focus{
-    background-color: var(--bg-zinc-400);
-    color:var(--bg-zinc-900);
+    background-color: #6d0606;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 5px #DC2626;
+    color: white;
 }
-
 
 .accordion-item{
-    background: none;
-    border:none
+    background-color: #400101;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px 5px #DC2626;
+        color: white;
+        border: none;   
 }
 
-.btn-primary, .btn{
-    
-    background: linear-gradient(to bottom, #F62F63, #8F8AC0);
-    font-weight: bold;
-    border:none;
-    
+/* buttons */
+.elegant-button {
+    width:20%;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px white;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-
- .btn:hover{
-        background: linear-gradient(to bottom, #F62F63, #8F8AC0);
-        font-weight: bold;
-        border: none;
-        opacity: 0.9;
-        transition: all 0.5s;
-        
+.elegant-button:hover, .elegant-button:active, .elegant-button:focus{
+    
+    background-color: black;
+    box-shadow: none;
 }
