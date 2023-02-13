@@ -23,7 +23,7 @@
     }
 
 body{
-    background-color: var(--bg-reddark-100);
+    background-color: var(--bg-white);
     color:var(--bg-zinc-900);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -64,7 +64,7 @@ main{
     width: 100%;
     background-color: #6d0606;
         border-radius: 15px;
-        box-shadow: 10px 10px 20px 7px #DC2626;
+        box-shadow: 5px 5px 5px 3px #DC2626;
     
  }
 
@@ -78,10 +78,15 @@ main{
 
 
 .contribimg{
-    background-color: #6d0606;
+    background-color: var(--bg-zinc-200);
         border-radius: 15px;
-        box-shadow: 10px 10px 10px 5px #DC2626;
+        box-shadow:10px 0px 0px 5px #DC2626;
         color: white;
+}
+
+.contribimg img{
+    height:50%;
+    min-width:30%;
 }
 
  #ask{
@@ -94,10 +99,15 @@ main{
 
 /* cards Fases  */
  #phases .card_contri{ 
-    margin-top: 3vh;
-    background-color: #6d0606;
+    background-color: var(--bg-zinc-200);
     border-radius: 15px;    
-    box-shadow: 10px 10px 10px 10px #DC2626;
+    box-shadow: 10px 15px #DC2626;
+ }
+
+ .card_contri{ 
+    background-color: var(--bg-zinc-200);
+    border-radius: 15px;    
+    box-shadow: 10px 15px #DC2626;
  }
 
 /*  div doar */
@@ -113,18 +123,24 @@ main{
     font-weight: bold;
 }   
 /* button doar */
-#doar a {
-    background: linear-gradient(0deg, rgba(248, 113, 113, 1) 22%, rgba(115, 2, 2, 1) 59%, rgba(64, 1, 1, 1) 80%);
+#doar {
+    /* background: linear-gradient(0deg, rgba(248, 113, 113, 1) 22%, rgba(115, 2, 2, 1) 59%, rgba(64, 1, 1, 1) 80%);*/
+    background-color: var(--bg-reddark-100);
     border: none;
     border-radius: 5px;
     color: white;
+
+    margin:5rem 0;
+}
+
+#doar a {
     text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
-    box-shadow: 0 0 10px #DC2626;
+    box-shadow: 0 0 5px #DC2626;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
 
+    color:white;
 
 }
 
@@ -230,9 +246,9 @@ input[type="checkbox"]:checked {
 }
 
 .accordion-button{
-    background-color: #6d0606;
+    background-color: var(--bg-reddark-100);
     border-radius: 15px;
-    box-shadow: 10px 10px 10px 5px #DC2626;
+    
     color: white;
     border: none;
 
@@ -241,14 +257,13 @@ input[type="checkbox"]:checked {
 .accordion-button:focus{
     background-color: #6d0606;
     border-radius: 15px;
-    box-shadow: 10px 10px 10px 5px #DC2626;
     color: white;
 }
 
 .accordion-item{
     background-color: #400101;
         border-radius: 15px;
-        box-shadow: 10px 10px 10px 5px #DC2626;
+        box-shadow: 10px 15px #DC2626;
         color: white;
         border: none;   
 }
@@ -261,13 +276,23 @@ input[type="checkbox"]:checked {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 3px white;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
+
+    opacity: 0.6;
+    transition:0.5s;
 }
 
 .elegant-button:hover, .elegant-button:active, .elegant-button:focus{
     
     background-color: black;
     box-shadow: none;
+    opacity: 1;
+}
+
+
+#form_email{
+    
+    box-shadow: rgb(220, 38, 38) 0px 2px 5px -1px, rgba(220, 38, 38, 0.3) 0px 1px 3px -1px;
 }
