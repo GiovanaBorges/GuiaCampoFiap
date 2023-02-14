@@ -248,7 +248,6 @@ input[type="checkbox"]:checked {
 .accordion-button{
     background-color: var(--bg-reddark-100);
     border-radius: 15px;
-    
     color: white;
     border: none;
 
@@ -263,7 +262,6 @@ input[type="checkbox"]:checked {
 .accordion-item{
     background-color: #400101;
         border-radius: 15px;
-        box-shadow: 10px 15px #DC2626;
         color: white;
         border: none;   
 }
@@ -276,18 +274,15 @@ input[type="checkbox"]:checked {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 0 3px white;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
-
-    opacity: 0.6;
+    opacity: 0.8;
     transition:0.5s;
 }
 
-.elegant-button:hover, .elegant-button:active, .elegant-button:focus{
-    
+.elegant-button:hover{
     background-color: black;
-    box-shadow: none;
+    transition: all 0.3s;
     opacity: 1;
 }
 
