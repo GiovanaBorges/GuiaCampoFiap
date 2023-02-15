@@ -81,7 +81,7 @@ main{
     background-color: var(--bg-zinc-200);
         border-radius: 15px;
         box-shadow:10px 0px 0px 5px #DC2626;
-        color: white;
+        
 }
 
 .contribimg img{
