@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- reset browser css -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="stylesheet" href="../css.css">
+    <title>Kanban</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-5 py-3">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="../../../index.html">
+                <img src="../../../assets/img/logo_fiapImg.jpg" alt="" style="height:50px;border-radius: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="nav-item dropdown" id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fiap Project
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../../templates.html">Templates de estudo</a></li>
+                    <li><a class="dropdown-item" href="#">Quem somos</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+
+
+            <!-- dropdown contatos -->
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fases
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../fases.html" class="dropdown-item" href="#">Todas fases</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 1</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 2</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 3</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 4</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 5</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Capítulo
+                </a>
+                <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="#">Capítulo 1</a></li>
+                    <li><a class="dropdown-item" href="#">Capítulo 2</a></li>
+                    <li><a class="dropdown-item" href="#">Capítulo 3</a></li>
+                </ul>
+            </li>
+
+            <!-- dropdown fases -->
+            <button class="btn btn-primary my-2 my-sm-0">
+                Contato
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="darkMode()"
+                id="modeLight">
+                <img src="https://img.icons8.com/glyph-neue/34/null/bright-moon.png" id="icon_image" />
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="lightMode()"
+                id="modeDark">
+                <img src="https://img.icons8.com/ios-filled/34/null/smiling-sun.png" />
+            </button>
+
+
+        </ul>
+
+
+        <!-- fim da lista -->
+
+
+    </nav>
+
+
+    <main>
+
+        <div class="textarea p-5 mt-5">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <h1>Kanban</h1>
+                <h6>Feito por : Giovana</h6>
+            </div>
+            <h5 class="my-4">Capítulo 1 </h5>
+
+            
+
+            <p>
+                O termo “Kanban” é de origem japonesa e significa “sinalização” ou “cartão”, e propõe o uso de cartões (post-its) para indicar e acompanhar o andamento da produção dentro da indústria. Trata-se de um sistema visual que busca gerenciar o trabalho conforme ele se move pelo processo.
+            </p>
+
+
+            <img src="https://www.napratica.org.br/wp-content/uploads/2021/06/entendendo-o-metodo-kanban-na-pratica.jpg"
+                alt="">
+                <p class="text-center my-2 font-italic">Imagem com as separações necessárias , do (fazer), doing (fazendo) e done (feito)</p>
+
+                <h5 class="my-4">História do Kanban </h5>
+
+                <p>
+                    O termo “Kanban” é de origem japonesa e significa “sinalização” ou “cartão”, e propõe o uso de cartões (post-its) para indicar e acompanhar o andamento da produção dentro da indústria. Trata-se de um sistema visual que busca gerenciar o trabalho conforme ele se move pelo processo.
+                </p>
+
+                <p>
+                    O Kanban é um método de gestão de trabalho, originado do Sistema Toyota de Produção (TPS) . No final da década de 1940, a Toyota introduziu a fabricação “just in time” em sua produção. A abordagem representa um sistema puxado. Isso significa que a produção é baseada na demanda do cliente, em vez da prática padrão de produzir certas quantidades de mercadorias e empurrá-las ao mercado.
+                </p>
+
+                <p>
+                    Seu sistema único de produção criou a base da produção Lean, ou simplesmente Lean. Seu propósito central é minimizar as atividades, sem sacrificar a produtividade. O objetivo principal é criar mais valor para o cliente, sem gerar mais custos.
+                </p>
+
+                <img src="https://resources.why-innovation.com/prod-webuserimages/712ddd63-b1d0-422a-9cd9-8b4c87ff53ec.jpg"
+                alt="">
+                <p class="text-center my-2 font-italic">Funcionário da Toyota trabalhando com Kanban</p>
+
+
+                <div id="doar" class="p-5 text-center">
+                    <h1 class="font200">Doe para o projeto </h1>
+                    <h4 class="font400 mb-5">Tá gostando do conteúdo?</h4>
+                    <a href="#" class="p-3 mt-5">Doar</a>
+                </div>
+
+                <h3 class="my-3">
+                    Beleza entendi o que é o Kanban e como ele foi criado , mas como aplico ele ?
+                </h3>
+
+                <h4>
+                    O Kanban não é algo complexo porém ele possui suas regras principais , são estas
+                </h4>
+
+                <ul>
+                    <li>
+                        1 — Comece com o que você faz agora. … 
+                        Fazer uma coisa de cada vez e entregar o possível que você consegue no momento.
+                    </li>
+                    <li>
+                        2 — Concorde em buscar mudanças evolucionárias e incrementais. …
+                        Evoluir sempre o processo para que cada Sprint se torne melhor .
+                    </li>
+                    <li>
+                        3 — Respeite o processo atual, papéis, títulos e responsabilidades. …
+                        Essa daqui é bem soft skill kkkkk , é reconhecer o seu papel e atividades para você e ser proativo para ajudar o time .
+                    </li>
+                    <li>
+                        4 — Liderança em todos os níveis.
+                        Quer dizer não ter somente líderes para deixar o processo melhor e remover bloqueios.
+                    </li>
+                </ul>
+
+                <h3 class="my-4">
+                    Vamos aplicar o Kanban !
+                </h3>
+
+                <h6>Dica : Existe algumas ferramentas online como o Trello (particularmente recomendo muito) para te ajudar com os quadros, mas também é possível usar post-it e um quadro.</h6>
+
+                <h3 class="my-4">Primeiramente</h3>
+
+                <p>você precisa criar 3 separações , uma para o To do (para fazer) , doing(fazendo) e done(feito).
+                </p>
+
+                <p>O sistema não tem muito segredo , você descreve as tarefas a ser feita em post-it , de forma bem direta, nada de textos gigantes para explicar algo que pode ser resumido em uma frase , seja sempre direto(a)! . coloca esse post-it na parte do To do(fazer) , você vai fazer com todas as tarefas que precisam ser feitas . e tenha um prazo definido para a finalização dessas tarefas , em média o prazo definido é de 1 a 4 semanas , depende do escopo do seu projeto , se é bem complexo e demandará tempo .</p>
+
+                <p>
+                    você poderá escolher a atividade que deseja fazer , ao escolher a que deseja , arraste para a parte doing(fazendo) e somente quando terminar arraste para done (feito) , nada de fazer 2 atividades ao mesmo tempo somente ses elas precisarem ser feitas em paralelo .
+                    Lembre-se ágil não é sinônimo de rápido , o Kanban te ajuda a visualizar todos os processos que precisam ser feitos e caso precise refazer algo isso será mais rápido , respeite os processos e regras que tudo dará certo!.
+                </p>
+
+                <p>
+                    Para um aprofundamento sobre o tema Kanban coloque seu email abaixo e te contatamos para agendar uma aula experimental. 
+                
+                </p>
+
+                
+                    <div class="d-flex flex-column justify-content-center ">
+                      <!-- Form -->
+                      <form class="p-5" id="form_email">
+                        <fieldset>
+                          <h1>Preencha os campos abaixos</h1>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Nome</label>
+                            <input type="text" id="nameInput" class="form-control" placeholder="Digite seu nome"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Email</label>
+                            <input type="text" id="emailInput" class="form-control" placeholder="Digite seu E-mail"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Celular</label>
+                            <input type="text" id="phoneInput" class="form-control" placeholder="Digite seu celular"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+          
+                          <div class="mb-3">
+          
+                            <legend style="font-size: 20px;">Mensagem</legend>
+                            <fieldset>
+                              <textarea class="form-control" id="msgInput" aria-label="Digite sua mensagem"
+                                style="color: var(--text-white); caret-color: var(--text-white);"
+                                placeholder="Desejo fazer uma aula experimental"></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="fieldsetCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Consentimento com uso dos dados.
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="emailCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por email
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="whatsCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por Whatsapp
+                              </label>
+                            </div>
+                          </div>
+                          <button class="btn text-white font700 mx-4 mt-4 mb-5 p-2 elegant-button" style="width:30%">Enviar</button>
+                        </fieldset>
+                      </form>
+          
+                    </div>
+                  
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center p-3 text-white">
+        <p class="mt-3 mx-5 font800"> Fiap project</p>
+        <p class="mt-3 mx-5 font400"> All rights reserved Copyright© 2023</p>
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js.js"></script>
+
+    
+</body>
+
+</html>
