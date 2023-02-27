@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- reset browser css -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="icon" href="../../../assets/img/logo_fiapImg.jpg" type="image/png">
+    <link rel="stylesheet" href="../css.css">
+    <title>Mysql</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-5 py-3">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="../../../index.html">
+                <img src="../../../assets/img/logo_fiapImg.jpg" alt="" style="height:50px;border-radius: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="nav-item dropdown" id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fiap Project
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../../templates.html">Templates de estudo</a></li>
+                    <li><a class="dropdown-item" href="#">Quem somos</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+
+
+            <!-- dropdown contatos -->
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fases
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../fases.html" class="dropdown-item" href="#">Todas fases</a></li>
+                    <li><a class="dropdown-item" href="../menu_fase1.html">Fase 1</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 2</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 3</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 4</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 5</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Capítulo
+                </a>
+                <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="../innerFases/cap 1.html">Capítulo 1</a></li>
+                    <li><a class="dropdown-item" href="../innerFases/cap2.html">Capítulo 2</a></li>
+                    <li><a class="dropdown-item" href="#">Capítulo 3</a></li>
+                </ul>
+            </li>
+
+            <!-- dropdown fases -->
+            <button class="btn btn-primary my-2 my-sm-0">
+                Contato
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="darkMode()"
+                id="modeLight">
+                <img src="https://img.icons8.com/glyph-neue/34/null/bright-moon.png" id="icon_image" />
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="lightMode()"
+                id="modeDark">
+                <img src="https://img.icons8.com/ios-filled/34/null/smiling-sun.png" />
+            </button>
+
+
+        </ul>
+
+
+        <!-- fim da lista -->
+
+
+    </nav>
+
+
+    <main>
+
+        <div class="textarea p-5 mt-5">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <h1>Mysql</h1>
+                <h6>Feito por : Arthur</h6>
+            </div>
+            <h5 class="my-4">Capítulo 2 </h5>
+
+            
+
+            <p>
+                MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto, amplamente utilizado em aplicações web. Ele permite a criação e gerenciamento de bancos de dados, assim como a execução de consultas para recuperação e manipulação de informações armazenadas. O MySQL é conhecido por sua facilidade de uso e robustez, tornando-o uma escolha popular para desenvolvedores e empresas.
+            </p>
+            
+
+                <img src="https://www.aprendendolinux.com/wp-content/uploads/2017/02/mysql-automatic-backup-script.jpg"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Ilustração da linguagem de banco de dados MYSQL</p>
+
+                
+            <h5 class="my-4">
+                Beleza mas onde ele é usado
+            </h5>
+
+            <h6 class="my-4">
+                O MySQL é utilizado para armazenar, organizar e recuperar informações em um banco de dados. Ele funciona criando tabelas para armazenar informações específicas, como nomes de usuários, endereços de e-mail e produtos em uma loja virtual, por exemplo. O MySQL também permite que você execute consultas complexas para recuperar e manipular esses dados de várias maneiras, como filtrar registros, calcular somas e contagens, e agrupar dados. Isso torna o MySQL uma ferramenta poderosa para aplicações que requerem armazenamento de dados e análise de informações.
+            </h6>
+
+            <h5 class="my-4">
+                O QUE É BANCO DE DADOS RELACIONAL VS NÃO RELACIONAL
+            </h5>
+
+            <P>
+                Banco de dados relacional e não relacional são dois tipos diferentes de sistemas de gerenciamento de banco de dados.
+            </p>
+            
+            <p>
+                Banco de dados relacional: Um banco de dados relacional é baseado em tabelas e relações entre elas. Cada tabela armazena informações específicas, como nomes de usuários ou detalhes de produtos, e as relações entre tabelas permitem que as informações sejam vinculadas e recuperadas de maneira organizada. O MySQL é um exemplo de RDBMS.
+            </p>
+
+            <p>
+                Em resumo, o banco de dados relacional é uma boa escolha quando você precisa de uma estrutura de dados organizada e bem definida, enquanto o NoSQL é mais flexível e escalável, e é uma boa opção para aplicações que lidam com grandes quantidades de dados não estruturados.
+            </p>
+
+
+            <h5 class="my-4">
+                PRINCIPAIS COMANDOS MYSQL 
+            </h5>
+
+            <p>
+                As principais comandos disponíveis no MySQL incluem:
+            </p>
+
+            <ul>
+                <li>SELECT: usado para recuperar informações do banco de dados.</li>
+                <li>INSERT: usado para inserir novos dados em uma tabela.</li>
+                <li>UPDATE: usado para atualizar informações existentes no banco de dados.</li>
+                <li>DELETE: usado para excluir dados do banco de dados.</li>
+                <li>CREATE: usado para criar novas tabelas, índices, banco de dados, etc.</li>
+                <li>DROP: usado para excluir tabelas, índices, banco de dados, etc.</li>
+                <li>ALTER: usado para modificar a estrutura de tabelas existentes, como adicionar ou excluir colunas.</li>
+                <li>INDEX: usado para criar ou excluir índices em uma tabela para melhorar a velocidade de consulta.</li>
+                <li>JOIN: usado para combinar informações de duas ou mais tabelas.</li>
+                <li>GROUP BY: usado para agrupar resultados de uma consulta por uma ou mais colunas.</li>
+            </ul>
+
+            <p>
+                Esses são apenas alguns dos comandos disponíveis no MySQL. Existem muitos outros que permitem que você realize tarefas mais avançadas, como transações, subconsultas e geração de relatórios.
+            </p>
+
+
+        
+            <h5 class="my-4">
+              
+                EXERCÍCIOS MYSQL
+
+            </h5>
+
+            <h6 class="my-4">
+                Aqui estão alguns exemplos de exercícios que você pode fazer para melhorar suas habilidades com o MySQL:
+            </h6>
+
+            <ul>
+                <li>Crie um banco de dados para armazenar informações sobre seus livros favoritos. Cada livro deve ter um título, autor, data de publicação e número de páginas.
+                </li>
+                <li>Inserir pelo menos 5 livros no banco de dados criado.
+                </li>
+                <li>Recuperar todos os livros escritos por um determinado autor.
+                </li>
+                <li>Atualize a data de publicação de um livro específico.
+                </li>
+                <li>Exclua um livro específico do banco de dados.
+                </li>
+                <li>Adicione uma nova coluna a tabela para armazenar a classificação do livro em uma escala de 1 a 5.
+                </li>
+                <li>Recuperar todos os livros com uma classificação acima de 4.</li>
+                <li>Agrupe os livros por ano de publicação e calcule a média de classificação para cada ano.</li>
+            </ul>
+
+            <p>
+                Esses são apenas alguns exemplos, mas há muito mais que você pode fazer para melhorar suas habilidades com o MySQL. Experimente criar consultas mais complexas, trabalhar com transações e aprender sobre técnicas de otimização de consultas.
+            </p>
+                
+            <h2 class="mt-5">
+                caso queira se aprofundar mais em Mysql , experimente uma de nossas aulas experimentais .
+            </h2>
+                
+                
+                    <div class="d-flex flex-column justify-content-center ">
+                      <!-- Form -->
+                      <form class="p-5" id="form_email">
+                        <fieldset>
+                          <h1>Preencha os campos abaixos</h1>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Nome</label>
+                            <input type="text" id="nameInput" class="form-control" placeholder="Digite seu nome"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Email</label>
+                            <input type="text" id="emailInput" class="form-control" placeholder="Digite seu E-mail"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Celular</label>
+                            <input type="text" id="phoneInput" class="form-control" placeholder="Digite seu celular"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+          
+                          <div class="mb-3">
+          
+                            <legend style="font-size: 20px;">Mensagem</legend>
+                            <fieldset>
+                              <textarea class="form-control" id="msgInput" aria-label="Digite sua mensagem"
+                                style="color: var(--text-white); caret-color: var(--text-white);"
+                                placeholder="Desejo fazer uma aula experimental"></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="fieldsetCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Consentimento com uso dos dados.
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="emailCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por email
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="whatsCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por Whatsapp
+                              </label>
+                            </div>
+                          </div>
+                          <button class="btn text-white font700 mx-4 mt-4  p-2 elegant-button" style="width:30%">Enviar</button>
+                        </fieldset>
+                      </form>
+          
+                    </div>
+                  
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center p-3 text-white">
+        <p class="mt-3 mx-5 font800"> Fiap project</p>
+        <p class="mt-3 mx-5 font400"> All rights reserved Copyright© 2023</p>
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js.js"></script>
+
+    
+</body>
+
+</html>
