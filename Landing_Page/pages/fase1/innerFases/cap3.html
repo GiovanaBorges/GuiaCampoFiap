@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- reset browser css -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="icon" href="../../../assets/img/logo_fiapImg.jpg" type="image/png">
+    <link rel="stylesheet" href="../css.css">
+    <title>Python</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-5 py-3">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="../../../index.html">
+                <img src="../../../assets/img/logo_fiapImg.jpg" alt="" style="height:50px;border-radius: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="nav-item dropdown" id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fiap Project
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../../templates.html">Templates de estudo</a></li>
+                    <li><a class="dropdown-item" href="#">Quem somos</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+
+
+            <!-- dropdown contatos -->
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fases
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../fases.html" class="dropdown-item" href="#">Todas fases</a></li>
+                    <li><a class="dropdown-item" href="../menu_fase1.html">Fase 1</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 2</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 3</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 4</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 5</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Capítulo
+                </a>
+                <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="../innerFases/cap 1.html">Capítulo 1</a></li>
+                    <li><a class="dropdown-item" href="../innerFases/cap2.html">Capítulo 2</a></li>
+                    <li><a class="dropdown-item" href="#">Capítulo 3</a></li>
+                </ul>
+            </li>
+
+            <!-- dropdown fases -->
+            <button class="btn btn-primary my-2 my-sm-0">
+                Contato
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="darkMode()"
+                id="modeLight">
+                <img src="https://img.icons8.com/glyph-neue/34/null/bright-moon.png" id="icon_image" />
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="lightMode()"
+                id="modeDark">
+                <img src="https://img.icons8.com/ios-filled/34/null/smiling-sun.png" />
+            </button>
+
+
+        </ul>
+
+
+        <!-- fim da lista -->
+
+
+    </nav>
+
+
+    <main>
+
+        <div class="textarea p-5 mt-5">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <h1>Python</h1>
+                <h6>Feito por : Giovana</h6>
+            </div>
+            <h5 class="my-4">Capítulo 3 </h5>
+
+            
+
+            <p>
+                Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.
+
+            </p>
+
+            
+            <img src="data:image/png;base64,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"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Icone da linguagem Python</p>
+
+            <h5 class="my-4">
+                Beleza mas onde ele é usado
+            </h5>
+
+            <p>
+                Alguns dos usos mais comuns da linguagem Python incluem desenvolvimento web, automação, testagem de software, análise de dados, aprendizado de máquina e desenvolvimento de jogos.
+            </p>
+
+            <p>
+                “O mercado para programadores(as) Python está cheio de boas oportunidades. Quem avança na carreira pode ter ganhos mensais de aproximadamente R$ 4.000. Já os desenvolvedores Python sênior alcançam rendimentos médios de R$ 7.000 ao mês”, diz o IGTI.
+            </p>
+
+            <h3>
+                Vamos entender mais de perto o que é esse tão famoso Python
+            </h3>
+
+            <p>
+                Publicado em 1991, o Python traz características que possibilitam escrever o mesmo requisito em menos linhas de código que o necessário em outras linguagens de programação e hoje, além de adotado na construção de soluções web, também está sendo muito utilizado em aplicações que lidam com processamento de texto, machine learning e recomendação de conteúdo, áreas que não param de crescer. Mas, vamos com calma neste momento, não é mesmo? Primeiro, precisamos saber por onde começar e o que é o Python.
+            </p>
+
+            <p>
+                Como você pôde notar, o Python é uma linguagem interpretada e fracamente tipada (não precisamos declarar o tipo de uma variável, por exemplo). Além disso, é uma linguagem de propósito geral. Portanto, pode ser utilizada para solucionar qualquer tipo de problema, o qual pode ser atendido com um sistema desktop, para a web ou mobile.
+            </p>
+
+
+            <h2 class="my-5">
+                Tipos de Dados em Python
+            </h2>
+
+            <p>
+                Uma característica que facilita muito a vida do desenvolvedor são as conversões de tipos em Python. Veja na Listagem 2 alguns exemplos.
+            </p>
+
+            <ul>
+                <li>a = float(22/5)</li>
+                <li>b = int(4.5)</li>
+                <li>c = int(3.9)</li>
+                <li>d = int(0xff563)</li>
+                <li>e = float(int(3.9))</li>
+                <li>f = int(float(3.9))</li>
+                <li>g = int(float(3))</li>
+                <li>h = round(3.9)</li>
+                <li>i = round(3)</li>
+                <li>j = int(round(3.9))</li>
+                <li>print(a,b,c,d,e,f,g,h,i,j)</li>
+            </ul>
+
+            <h5 class="my-3">
+                Vamos entender melhor cada tipo:
+            </h5>
+
+                
+            <h2 class="mt-5">
+                Inteiros
+            </h2>
+                
+            <p>
+                Para a declaração de números inteiros, necessitamos que estes estejam entre -2147483648 a 2147483647. Cada um ocupa quatro bytes na memória e pode armazenar tantos valores decimais (de base 10), quanto valores octais (de base 8) e hexadecimais (base 16). Para declarar um inteiro octal, o número 0 (zero) tem que ser prefixado ao número, como em 0123; e para definir um número hexadecimal, o prefixo 0x ou 0X deve ser utilizado, como 0xFFFFFF ou 0X006699.                
+            </p>
+
+            <p>
+                a = 42 #decimal
+                b = 010 #octal
+                c = 0xA #hexadecimal
+            </p>
+
+            <h2 class="mt-5">
+                Long
+            </h2>
+                
+            <p>
+                Representa números inteiros longos e pode armazenar números tão grandes quanto a memória puder armazenar. Assim como o tipo int, o long também pode armazenar números tanto decimais, quanto octais e hexadecimais. Para declarar um valor long mesmo se o número a ser atribuído estiver na faixa de valores do tipo int é necessário sufixar a letra L (minúscula ou maiúscula) como em 524511574362l, 0xDDEFBDAEFBDAECBFBAEL e 0122L.
+            </p>
+            <p>
+                Exemplo: a = 0xDDEFBDAEFBDAECBFBAEL representa: hexadecimal Long
+            </p>
+
+            <h2 class="mt-5">
+                Float
+            </h2>
+
+            <p>
+                Representa números reais e que possuem sinal de expoente (e ou E). Esses números são comumente chamados de floating-point numbers ou números de ponto flutuante. Por exemplo: 0.0042, .005, 1.14159265 e 6.02e23 (o mesmo que 6.02 x 10²³).
+            </p>
+
+
+
+            <h2 class="mt-5">
+                Bool
+            </h2>
+
+            <p>
+                O tipo bool foi adicionado na versão 2.2 do Python como uma especialização do tipo int. Os valores do tipo bool podem representar dois valores completamente distintos: True (igual ao int 1) e False (igual ao int 0) para, respectivamente, verdadeiro e falso. Exemplo: a = True e b = False.
+            </p>
+
+            
+            <h2 class="mt-5">
+                None Type
+            </h2>
+
+            <p>
+                NoneType é o tipo de None, uma constante embutida do Python que, assim como True e False, e é frequentemente utilizada para representar a ausência de um valor, similar ao null na linguagem C e derivadas. Exemplo: a = None (o mesmo que null em Java).
+            </p>
+
+            <h2 class="mt-5">
+                String
+            </h2>
+
+            <p>
+                Para atribuirmos a uma variável uma referência do tipo string, basta que coloquemos entre aspas simples, duplas ou triplas, como mostra a Listagem 4.
+
+                a = 'Isso é uma String com aspas Simples'
+                b = "Isso é uma String com aspas Duplas"
+                c = """Isso é Uma String com aspas Triplas"""
+                print(a + "\n" + b + "\n" + c)
+            </p>
+
+
+            <h2 class="my-5">
+                Operadores
+            </h2>
+
+            <p>
+                A Tabela resume como são utilizados os operadores na linguagem.
+            </p>
+
+               <img src="../../../assets/img/table_chapter3_phase1.PNG"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Tabela com valores aritméticos, comparação e lógicos (e/ou/não)</p>
+
+
+                
+            <h2 class="my-5">
+                Entrada de Dados no Python
+            </h2>
+
+            <p>
+                Em Python, a leitura de dados do teclado é feita através das funções raw_input e input, como mostra o exemplo da Listagem 6. Contudo, em versões superiores a 3.0, a função raw_input não funciona.
+
+                1 import sys
+                2
+                3 nome = input("Digite seu nome: ")
+                4 idade = input("Digite sua idade: ")
+                5 print("Digite seu sexo: ")
+                6 sexo = sys.stdin.readline()
+                7
+                8 print("Nome:"+nome + "\n" + "Sexo: %s Idade: %s" %(sexo,idade))
+                </p>
+
+                <div id="doar" class="p-5 text-center">
+                    <h1 class="font200">Doe para o projeto </h1>
+                    <h4 class="font400 mb-5">Tá gostando do conteúdo?</h4>
+                    <a href="#" class="p-3 mt-5">Doar</a>
+                </div>
+
+                
+                <h2 class="mt-5">
+                    Comandos de Decisão
+                </h2>
+
+                <p>
+                    Para quem já tem contato com alguma linguagem de programação, é possível notar que é muito simples os comandos condicionais de Python:
+                </p>
+
+                <p>
+                    if  CONDIÇÃO :
+                    BLOCO DE CÓDIGO
+                    elif  CONDIÇÃO :
+                    BLOCO DE CÓDIGO
+                    else :
+                    BLOCO DE CÓDIGO
+                    IF, ELIF, ELSE no Python
+                    Uma observação que deve ser feita é que em Python não usamos as chaves {} para iniciar e finalizar um bloco de instruções. Para que você delimite onde cada bloco começa e acaba, basta identar o código, como mostra a Listagem 7.
+
+                    # coding:utf-8
+                    dedos = int(input("Você tem quantos anos? "))
+
+                    if dedos == 18:
+                    print("Você tem 18 anos")
+                    elif dedos > 18:
+                    print("Você tem mais de 18 anos")
+                    else:
+                    print("Você é menor de idade”)
+                    Listagem 7. Exemplo básico de como pode ser usado os comandos de decisões: If, Elif e Else
+
+                </p>
+
+                <h2 class="mt-3">
+                    Switch Case
+                </h2>
+    
+                <p>
+                    Outra forma de utilizar o if, elif e else, é implementando-o como uma estrutura switch, onde cada elif vai ter um case dentro do switch.
+                </p>
+
+                <p>
+                    # coding: utf-8
+                    var1 = int(input("Digite um Número para var1"))
+                    var2 = int(input("Digite um Número para var2"))
+                    if var1 == 1:
+                    print("Número var1 igual a 1")
+                    elif var1 == 2 or var2 == 3:
+                    print("var1 diferente de 1 ou var2 diferente de 2")
+                    elif var1 >= 1000 or var2 <= -1000:
+                    print("var1 maior que 1000 ou var2 menor que -1000")
+                    else:
+                    print("nenhuma das alternativas anteriores")
+                </p>
+
+
+                <h2 class="mt-5">
+                    E para caso eu precise repetir uma parte do código mais de uma vez , o que faço ?
+                </h2>
+
+                <h2 class="mt-3">
+                    Laço de Repetição FOR
+                </h2>
+
+                <p>
+                    No laço de repetição for é implementado em Python e pode ser utilizado de diversas maneiras.
+                </p>
+                
+                <p>
+                    
+                    1  #coding: utf-8
+                    2  for fruta in [ "banana", "maca ", "uva" ]:
+                    3       print ("Fruta : " + fruta)
+                    4  print("------------------------------")
+                    5  for i in range (0,10): #(Inclui o Zero, NÃO INCLUI O 10)
+                    6       print ("i = " + str ( i ))
+                    7  print("------------------------------")
+                    8  for i in range(0,10):
+                    9       print ('Não realizado1')
+                    10           if i == 0:
+                    11           break
+                    12 print ('Realizado')
+
+                </p>
+
+                <p>
+                    Nesse exemplo, o for da linha 2 armazena três valores para a variável fruta.
+                </p>
+
+                <p>
+                    
+                    No for da linha 5 armazena os valores da sequência range para a variável i e dentro do for da linha 8 demonstra que é possível colocar estruturas de condições.
+                </p>
+
+
+                <h2 class="mt-3">
+                    Laços de repetição WHILE no Python
+                </h2>
+
+                <p>
+                    O laço de repetição while no Python tem basicamente a mesma estrutura do for, porém, como no for ou if, não se utilizam os parênteses para definir a condição e seu bloco de instrução também é definido com a identação.
+                </p>
+
+                <p>
+                    1  i = 0
+                    2  while i < 10:
+                    3    print ("i = ",i)
+                    4    i += 1
+                    5
+                    6  while True:
+                    7    pass
+
+                </p>
+
+                
+                <h2 class="mt-3">
+                    Função RANGE()
+                </h2>
+
+                <p>Existe também a função range(), que retorna um array, ou seja, os elementos são representados em uma sequência.</p>
+
+                <p>
+                    1 print (range(10)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                    2 print (range(5, 10)) # [5, 6, 7, 8, 9]
+                    3 print (range(10, 0)) # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+                    4 i=int(input("Digite um Número"))
+                    5 if i in range(0,10):
+                    6   print("Está Contido")
+                    7 else:
+                    8   print("Não está Contido")
+                    Listagem 9. Exemplo utilizando range
+                    Nas linhas 1 a 3 é impresso na tela os valores (que estão em comentários), e a partir da linha 4 é verificado se o valor digitado pelo usuário está contido na sequência de 0 a 9.
+                </p>
+
+                <h2 class="mt-5">
+                    EXERCÍCIOS EM PYTHON 
+                </h2>
+
+                <p>
+                    Aqui estão alguns exemplos de exercícios que você pode fazer para melhorar suas habilidades com o Python:
+                </p>
+
+
+
+            <ul>
+                <li>Faça um programa que informe a versão do Python que você está utilizando
+                    Dicas : 
+                     - O módulo sys fornece funções e variáveis usadas para manipular diferentes partes do ambiente de tempo de execução do Python;
+                    - Pra quem ainda não está familiarizado com a linguagem, um módulo é um arquivo contendo definições e comandos em Python para serem usados em outros programas.
+                   </li>
+                   <li>
+                    Faça um programa em linguagem Python que converta metros para centímetros.
+                   </li>
+                   <li>
+                    Faça um programa para somar dois valores quaisquer e armazenar em uma variável
+                   </li>
+                   <li>
+                    Faça um programa em Python que leia um valor inteiro e mostre a tabuada de 1 a 10 do valor lido.
+                   </li>
+                   <li>
+                    Faça um algoritmo em linguagem Python que receba duas notas e calcule a média aritmética e mostre o resultado.
+                   </li>
+                   <li>
+                    Escreva um programa que mostre todos os números entre 5 e 100 que são divisíveis por 7, mas não são múltiplos de 5. Os números obtidos devem ser impressos em sequência.
+                   </li>
+                   <li>Faça um programa que receba um número digitado pelo usuário e calcule a soma de todos os números de 1 até ao número digitado. Por exemplo, se o usuário digitou o número 4, a saída deve ser 10 (1+2+3+4=10).</li>
+                   <li>
+                    Faça um programa que recebendo um valor inteiro, informe se o número é positivo, negativo ou neutro.
+                   </li>
+                   <li>
+                    Crie um algoritmo que receba um número, conte o número total de dígitos e mostre o resultado.
+                    Por exemplo, se o número é 2021 , então a saída deve ser 4
+                   </li>
+            </ul>
+
+            
+                <p>
+                    Para um aprofundamento sobre o tema Python coloque seu email abaixo e te contatamos para agendar uma aula experimental. 
+                
+                </p>
+
+                
+                    <div class="d-flex flex-column justify-content-center ">
+                      <!-- Form -->
+                      <form class="p-5" id="form_email">
+                        <fieldset>
+                          <h1>Preencha os campos abaixos</h1>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Nome</label>
+                            <input type="text" id="nameInput" class="form-control" placeholder="Digite seu nome"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Email</label>
+                            <input type="text" id="emailInput" class="form-control" placeholder="Digite seu E-mail"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Celular</label>
+                            <input type="text" id="phoneInput" class="form-control" placeholder="Digite seu celular"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+          
+                          <div class="mb-3">
+          
+                            <legend style="font-size: 20px;">Mensagem</legend>
+                            <fieldset>
+                              <textarea class="form-control" id="msgInput" aria-label="Digite sua mensagem"
+                                style="color: var(--text-white); caret-color: var(--text-white);"
+                                placeholder="Desejo fazer uma aula experimental"></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="fieldsetCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Consentimento com uso dos dados.
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="emailCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por email
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="whatsCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por Whatsapp
+                              </label>
+                            </div>
+                          </div>
+                          <button class="btn text-white font700 mx-4 mt-4  p-2 elegant-button" style="width:30%">Enviar</button>
+                        </fieldset>
+                      </form>
+          
+                    </div>
+                  
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center p-3 text-white">
+        <p class="mt-3 mx-5 font800"> Fiap project</p>
+        <p class="mt-3 mx-5 font400"> All rights reserved Copyright© 2023</p>
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js.js"></script>
+
+    
+</body>
+
+</html>
