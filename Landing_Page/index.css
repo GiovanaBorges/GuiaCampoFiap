@@ -288,6 +288,6 @@ input[type="checkbox"]:checked {
 
 
 #form_email{
-    
+    height:auto;
     box-shadow: rgb(220, 38, 38) 0px 2px 5px -1px, rgba(220, 38, 38, 0.3) 0px 1px 3px -1px;
 }
