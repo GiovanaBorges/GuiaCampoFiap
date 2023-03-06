@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- reset browser css -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../index.css">
+    <link rel="icon" href="../../../assets/img/logo_fiapImg.jpg" type="image/png">
+    <link rel="stylesheet" href="../css.css">
+    <title>Javascript</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-between px-5 py-3">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="../../../index.html">
+                <img src="../../../assets/img/logo_fiapImg.jpg" alt="" style="height:50px;border-radius: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="nav-item dropdown" id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fiap Project
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../../templates.html">Templates de estudo</a></li>
+                    <li><a class="dropdown-item" href="#">Quem somos</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <ul class="navbar-nav">
+            <!-- Home -->
+
+
+            <!-- dropdown contatos -->
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Fases
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../fases.html" class="dropdown-item" href="#">Todas fases</a></li>
+                    <li><a class="dropdown-item" href="../menu_fase1.html">Fase 1</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 2</a></li>
+                    <li><a class="dropdown-item" href="../../fase3/menu_fase3.html">Fase 3</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 4</a></li>
+                    <li><a class="dropdown-item" href="#">Fase 5</a></li>
+
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown mx-4 " id="dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Capítulo
+                </a>
+                <ul class="dropdown-menu">
+                    
+                    <li><a class="dropdown-item" href="../innerFases/cap 1.html">Capítulo 1</a></li>
+                    <li><a class="dropdown-item" href="../innerFases/cap2.html">Capítulo 2</a></li>
+                    <li><a class="dropdown-item" href="#">Capítulo 3</a></li>
+                </ul>
+            </li>
+
+            <!-- dropdown fases -->
+            <button class="btn btn-primary my-2 my-sm-0">
+                Contato
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="darkMode()"
+                id="modeLight">
+                <img src="https://img.icons8.com/glyph-neue/34/null/bright-moon.png" id="icon_image" />
+            </button>
+
+            <button class="btn my-2 my-sm-0 mx-3" style="background-color: var(--bg-reddark-100);" onclick="lightMode()"
+                id="modeDark">
+                <img src="https://img.icons8.com/ios-filled/34/null/smiling-sun.png" />
+            </button>
+
+
+        </ul>
+
+
+        <!-- fim da lista -->
+
+
+    </nav>
+
+
+    <main>
+
+        <div class="textarea p-5 mt-5">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <h1>Javascript</h1>
+                <h6>Feito por : Arthur</h6>
+            </div>
+            <h5 class="my-4">Capítulo 3 </h5>
+
+            
+
+            <p>
+                O javaScript, ou ainda ECMAscript(Nome oficial), é uma linguagem de programação do tipo script que roda do lado do cliente.
+            </p>
+            
+            <p>
+                
+                Através de uma interface conhecida como DOM(Document Object Model), todos os elementos(tags) de um documento HTML podem ser manipulados como se fossem objetos, por meio do JS.
+
+            </p>
+
+                <img src="https://tm.ibxk.com.br/2021/10/23/23203456351007.jpg?ims=1120x420"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Logo da linguagem de programação Javascript</p>
+
+            
+            <h6 class="my-4">
+                por que usar Javascript ?
+            </h6>
+            
+            <p>
+                
+                O JS é utilizado como a linguagem de programação responsável por programar as interações que a página terá com os seus usuários, isto é, programar os comportamentos e atividades da página HTML.
+
+            </p>
+
+            <p>
+                Sem o uso de uma linguagem de programação para definir o comportamento da página, teríamos documentos estáticos que não enviam, nem recebem arquivos, somente, exibem conteúdo.
+            </p>
+
+            <h5 class="my-4">Básico Javascript</h5>
+            <h3>Tipos de aplicação do JS.</h3>
+            <p>
+                JS obstrutivo - quando o código em JS está misturado com o HTML
+            </p>
+
+
+            <p>
+                
+                dificulta a manutenção e impossibilita o reuso do código
+
+            </p>
+
+            <img src="./imgCap3/1.png"
+                alt="Imagem javaScript dentro de HTML">
+                <p class="text-center my-2 mb-5 font-italic">Imagem javaScript dentro de HTML</p>
+
+
+                
+            <h5 class="my-4">
+                JS dentro da tag script
+                </h5>
+
+            <p>
+                Permite o reuso do código e facilita a manutenção, mas não é o ideal
+            </p>
+
+            <img src="./imgCap3/2.png"
+            alt="Imagem javaScript dentro de HTML">
+            <p class="text-center my-2 mb-5 font-italic">Imagem javaScript dentro de HTML</p>
+            <p class="text-center my-2 mb-5 font-italic">.obs: note que a função com o evento aler é chamada fora da tag script</p>
+
+            <p>
+                JS não obstrutivo - separa, completamente, os documentos JS e HTML
+            </p>
+
+            <p>
+                Melhor prática, otimizando o código e se adequando aos motores de busca SEO(search engine optimization)
+
+            </p>
+
+            <p>
+                Para tanto, devemos acessar o DOM e identificar o objeto que representa nosso botão. Ele deverá receber o identificador (o atributo id no HTML) e seu objeto correspondente será localizado utilizando uma função chamada document.getElementById().
+            </p>
+
+            <p>
+                Essa função recebe como parâmetro o identificador do objeto e, se ela tiver sucesso, retorna o objeto correspondente. Para fins práticos, armazenaremos o objeto em uma variável (vamos falar mais sobre elas adiante!). Depois disso, basta chamar nosso evento onClick, dessa vez no JavaScript, de uma maneira bem peculiar
+            </p>
+
+
+            <img src="./imgCap3/3.png"
+            alt="Imagem javaScript dentro de HTML">
+            <p class="text-center my-2 mb-5 font-italic">JS não obstrutivo</p>
+
+
+            <p>
+                Ainda, resta separar os dois códigos em dois arquivos diferentes, como fizemos com o CSS. Basta mover os procedimentos JavaScript para um arquivo de extensão .js, e chamá-lo usando a mesma tag script, que ganha um atributo src (source):
+            </p>
+
+            <img src="./imgCap3/4.png"
+            alt="Imagem javaScript dentro de HTML">
+            <p class="text-center my-2 mb-5 font-italic">JS não obstrutivo</p>
+
+            <p>
+                
+                .obs: Note que a tag script agora separa o documento de extensão chamado pelo atributo src="" do documento HTML.
+
+            </p>
+
+
+            <p>
+                Por boa prática, a tag script é incorporada no body se for preciso utilizar os elementos do body antes de carregá-la, senão, é inserida na head
+            </p>
+
+            <img src="./imgCap3/5.png"
+            alt="Imagem javaScript dentro de HTML">
+            <p class="text-center my-2 mb-5 font-italic">JS não obstrutivo</p>
+
+
+            <h5 class="my-4">Comandos de entrada e saída</h5>
+
+                <p>
+                    prompt() - renderiza na tela uma mensagem uma mensagem. Utilizada como input para receber dados do usuário
+                </p>
+
+                <p>
+                    window.alert() - mostra a saída de uma informação, para que já viu o básico de estruturas de saída de dados em python, essa função atua como um print() do dado recebido pelo prompt().
+                </p>
+
+
+            <p>
+                confirm() - gera um evento de confirmação para o usuário
+            </p>
+
+            <img src="./imgCap3/6.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">Comandos de entrada e saida</p>
+            <p class="text-center my-2 mb-5 font-italic">obs. o uso do window não é obrigatório</p>
+
+            
+            <h5 class="my-4">Estruturas/Variáveis</h5>
+
+            <p>Variáveis: são como vagas de um estacionamento dentro de um terreno.</p>
+
+            <p>
+                As vagas são variáveis, elas armazenam conteúdo. O terreno é a memória, onde estão distribuídas as vagas. E os veículos que ocupam essas vagas são os dados, que podem ser de diferentes tipos como caminhões, carros, motos e da mesma forma, possuírem tamanhos diferentes, isto é, quanto maior a informação guardada, maior o espaço da vaga, maior o espaço que ocupará no terreno
+            </p>
+
+
+            <img src="./imgCap3/7.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">variaveis javascript</p>
+
+            <p>
+                As palavras reservadas var e let são atribuídas ao identificador da variável como uma espécie de declaração.
+            </p>
+
+            <p>
+                Obs. Identificador = nome da variável, no exemplo seguinte os identificadores são a1 e a2
+            </p>
+
+            
+            <img src="./imgCap3/8.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">variaveis javascript</p>
+            <p class="text-center my-2 mb-5 font-italic">>>>é lido que a variável a1 recebe o dado</p>
+
+
+            <h5 class="my-4">armazenamento de dados</h5>
+
+            <p>
+                O JS é uma linguagem não tipada, diferentemente, de linguagens de tipagem forte, a declaração não é feita. Possui variáveis do tipo variant, isto é, Os container de formação irão assumir a forma do dado guardado.
+            </p>
+
+            
+            <h5 class="my-4">Tipos primitivos:</h5>
+
+
+            <p>
+                Undefined:Indefinido é como o JavaScript expõe uma variável que foi declarada, mas não recebeu qualquer valor e, portanto, não assumiu nenhum tipo
+            </p>
+
+            <p>
+                Null:Isso acontece quando o valor null é literalmente atribuído à variável e ela está sem valor definido. Repare que é diferente de undefined; null é utilizado sempre que desejamos informar que a variável existe, mas ainda não possui um valor definido.
+            </p>
+
+            <p>
+                Boolean:Tipo lógico, permite armazenar valores como true (verdadeiro) e false (falso)
+            </p>
+
+            <p>
+                String: Cadeia de alfanuméricos; cada símbolo é armazenado em 16 bits no padrão UTF-16.
+            </p>
+
+            <p>
+                Number: Tipo numérico, sejam valores inteiros ou fracionados. São utilizados 64 bits por número, armazenados no padrão de dupla precisão estabelecido pelo IEEE.
+            </p>
+
+            <p>
+                Object: Tipo objeto, usado para armazenar objetos instanciados a partir de uma classe ou retornados por funções específicas.
+            </p>
+
+            <p>
+                Array: Utilizado quando for necessário armazenar mais de um valor simultaneamente, de qualquer tipo mencionado acima – possibilitando um array de números, de caracteres, de booleanos ou mesmo de objetos.
+            </p>
+
+            <p>
+                Conferindo o tipo de uma variant com typeof
+            </p>
+
+
+            <img src="./imgCap3/9.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">variaveis javascript</p>
+
+            
+            <h4 class="my-4">Dicas para nomear uma variável em JS.</h4>
+
+            <ul>
+                <li>.Podem começar com uma letra, $ ou _</li>
+                <li>Não podem começar com números</li>
+                <li>.O identificador pode ser constituído de letras ou números</li>
+                <li>.é possível utilizar acentos e símbolos</li>
+                <li>.não pode conter espaços</li>
+                <li>.não podem ser constituídos de palavras reservadas como let ou var</li>
+            </ul>
+
+            <h4 class="my-4">Dicas na hora de utilizar variáveis</h4>
+
+            <ul>
+                <li>letras maiúsculas e minúsculas fazem diferença, a linguagem interpreta como variáveis diferentes.</li>
+                <li>A =</li>
+                <li>a=</li>
+                <li>sempre optar por nomes coerentes com o conteúdo</li>
+                <li>aluno = “nome aluno”</li>
+                <li>idade = idade</li>
+                <li>evitar utilizar variáveis como n1, n2, n3 ou a,b,c</li>
+            </ul>
+            <h4 class="my-4">Operadores aritméticos e Funções matemáticas</h4>
+
+            <p>Realizam operações matemáticas dentro do código.</p>
+            <ul>
+                <li>Símbolo “+”: possibilita operações de adição/soma.</li>
+                <li>Símbolo “-”: possibilita operações de subtração.</li>
+                <li>Símbolo “*” (asterisco): possibilita operações de multiplicação.</li>
+                <li>Símbolo “/”: possibilita operações de divisão.</li>
+                <li>Símbolo “%”: possibilita realizar divisões, recuperando o resto da divisão</li>
+            </ul>
+
+            <p>
+                Além dos operadores aritméticos tradicionais, temos alguns atalhos: 
+            </p>
+
+
+            <p>
+                O nome da variável seguido de dois sinais de mais (variável++) significa um pós-incremento em um, ou seja, se variável=5, e na sequência, temos um comando como variável++, o valor contido na variável se torna 6.
+            </p>
+
+            <p>
+                Também é possível fazer um pós-decremento, ou seja, a variável-- fará o inverso, subtraindo um do valor da variável e armazenando o novo valor. As quatro operações básicas possibilitam outros atalhos para acúmulo de valores: o comando variável = variável + 5 pode ser escrito como variável += 5 5; trata-se apenas de uma forma reduzida de escrita, sendo assim, as duas linhas terão um mesmo resultado. Isso pode ser feito igualmente com subtração, multiplicação e divisão.
+            </p>
+
+
+            
+            <img src="./imgCap3/10.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">variaveis javascript</p>
+
+            
+            <img src="./imgCap3/11.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">operadores aritméticos</p>
+
+
+            <p>
+                O JavaScript conta com algumas funções matemáticas, para ser mais exato,
+                alguns atributos e métodos estáticos da classe Math. Abaixo, segue uma relação com alguns deles:               
+            </p>
+
+            <p>
+                Math.PI: retorna o valor de PI (aproximadamente 3,14).
+                Math.E: retorna o número de Euler (aproximadamente 2,718).
+                Math.LN2: retorna o logaritmo natural de 2 (aproximadamente 0,693).
+                Math.LN10: retorna o logaritmo natural de 10 (aproximadamente 2,302).
+                Math.ceil(x): arredonda o valor de x para cima.
+                Math.cos(x): calcula o cosseno de x (x deve estar em radianos).
+                Math.floor(x): arredonda o valor de x para baixo.
+                Math.log(x): calcu
+                Math.log(x): calcula o logaritmo de x (a base é o número de Euler).
+                Math.pow(x,y): retorna o valor de x elevado a y.
+                Math.random(): retorna um número aleatório entre 0 e 1.
+                Math.round(x): arredonda o valor de x para cima ou para baixo, utilizando o que estiver mais próximo.
+                Math.sin(x): calcula o seno de x (x deve estar em radianos).
+                Math.sqrt(x): retorna a raiz quadrada de x.
+                Math.tan(x): calcula a tangente de x (x deve estar em radianos).                
+            </p>
+
+            <p>
+                Aplicação
+            </p>
+
+            
+            <img src="./imgCap3/12.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">funções matemáticas javascript</p>
+
+
+            <img src="./imgCap3/13.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">resultado funções matemáticas</p>
+
+
+            <h2 class="my-4">Condicionais:  if, if else, if aninhado , else if</h2>
+
+            <p>
+                As estruturas condicionais controlam o fluxo do código.Isto é, criam desvios para tomadas de decisões.
+            </p>
+
+            <p>
+                Analisando as estruturas utilizando exemplo de aluno aprovado, reprovado, ou em exame
+            </p>
+
+            <h4>
+                
+                If e if composto (else)
+
+            </h4>
+
+            
+            <img src="./imgCap3/14.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">if e else javascript</p>
+
+            <img src="./imgCap3/15.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">if e else javascript</p>
+            <p>
+                O exemplo utiliza uma condicional composta; isto é, possui um bloco else que trata a condição sendo falsa; o primeiro bloco é o tratamento tradicional, caso a condição seja satisfeita.
+
+            </p>
+
+            <h4>
+                if aninhado
+            </h4>
+             
+            <img src="./imgCap3/16.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">if aninhado</p>
+
+            
+            <img src="./imgCap3/17.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">resultado if aninhado</p>
+
+
+            <p>
+                Existe uma alternativa para essa estrutura: trata-se do uso de else if; é apenas um atalho, uma força menos encadeada de estrutura e mais rápida de se digitar, poupando um abre e fecha chaves.
+            </p>
+
+            <h4>Else if</h4>
+
+            <img src="./imgCap3/18.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">else if javascript</p>
+
+            <img src="./imgCap3/19.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">else if javascript</p>
+
+
+            <h4>switch</h4>
+
+            <p>
+                O JavaScript possui ainda o comando switch, que permite várias verificações de igualdade em uma única estrutura. O exemplo a seguir mostra seu funcionamento:
+            </p>
+
+            
+            <img src="./imgCap3/20.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">Switch javascript</p>
+               
+            <img src="./imgCap3/21.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">Switch javascript</p>
+
+            <h1>Estrutura de Repetição</h1>
+
+            <h4>While</h4>
+
+            <p>
+                funciona como uma condicional simples com repetição, enquanto a condição posta for verdadeira o loop é executado.
+            </p>
+
+                   
+            <img src="./imgCap3/22.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">While javascript</p>
+
+            <h4>do… while             </h4>
+
+            <p>
+                sua única diferença é que a verificação da condição fica ao final do bloco e isso faz uma diferença crucial em relação ao while: temos a absoluta garantia de que o laço vai executar pelo menos uma única vez (diferente do while, que, se a condição não for satisfeita logo em seu início, não dá nem uma única volta sequer):
+            </p>
+
+            <img src="./imgCap3/23.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">Do While javascript</p>
+            <img src="./imgCap3/24.png"
+            alt="">
+            <p class="text-center my-2 mb-5 font-italic">
+                obs. Note que mesmo a condição sendo falsa desde o início, o laço ainda executa um primeiro loop, passando o valor um na div de saída de dados
+                </p>
+
+
+
+            <p>Texto em verde informa qual foi a alteração
+                Texto em azul define quantas foram as alterações
+                </p>
+
+                <h4>
+                    for 
+                </h4>
+
+                <p>
+                    É a preferida ao se construir laços como estes que usamos no exemplo, os chamados laços com número de voltas conhecido. Isso se deve ao fato de que essenciais (inicialização da variável, condição do laço e incremento da variável) ficam agrupados em uma única linha, minimizando as falhas ao se esquecer de um deles.
+                </p>
+
+
+                <img src="./imgCap3/25.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">For javascript</p>
+                <img src="./imgCap3/26.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">For javascript</p>
+
+                <h4>For of </h4>
+
+                <p>
+                    Existe ainda, uma estrutura de laço específica para ser usada com arrays. O comando 
+for.. of percorre automaticamente um array, do primeiro ao seu último elemento. Veja o exemplo a seguir:
+
+                </p>
+
+                <img src="./imgCap3/27.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">For of javascript</p>
+
+                <img src="./imgCap3/28.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">For of javascript</p>
+
+<h2>
+    
+extra
+
+</h2>
+
+
+<p>
+    
+obs. segue código em python com loop for para análise e comparação com o uso do for..of nos array em JS
+
+</p>
+
+<img src="./imgCap3/30.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Pyton for </p>
+
+<img src="./imgCap3/29.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Python for </p>
+                
+         
+                
+         
+<h2>
+    funções
+</h2>
+
+<p>
+    As funções em JS saõ declaradas através da palavra reservada function seguida do nome da função e () { conteúdo ou procedimento que será  executado com a chamada da função}
+</p>
+
+
+                <img src="./imgCap3/31.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Função js </p>
+
+                <h2>Programação orientada a eventos
+                </h2>
+
+                <p>
+                    Por ser uma linguagem muitas vezes utilizada do lado do cliente e, portanto, interpretada pelo navegador, o grande trunfo do JavaScript é a possibilidade de se programar por meio de eventos: podemos criar procedimentos que serão executados quando um determinado gatilho for acionado.
+                </p>
+
+                <p>
+                    Os eventos mais comuns são aqueles disparados pelo próprio usuário, quando ele clica em algum 
+elemento com o botão do mouse, quando ele digita alguma coisa ou quando um determinado  elemento ganha foco. Entretanto, existem outros disparados por tempo ou por alguma funcionalidade HTML 5 que tenha sido previamente solicitada.
+
+                </p>
+
+                <p>
+                    Já vimos o evento onclick sendo aplicado aos botões em exemplos anteriores, portanto, vamos a exemplos mais elaborados: o primeiro deles, um quadrado “desenhado” com CSS. Ao utilizar o evento onmouseover, mudamos sua cor de fundo quando o ponteiro do mouse passa por cima do elemento. O exemplo também exige um onmouseout, de forma que restauramos o fundo original da Figura “Exemplo de eventos onmouseover e onmouseout”, quando o ponteiro do mouse deixar o elemento:
+                </p>
+
+                <img src="./imgCap3/32.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Eventos js  </p>
+                
+                <img src="./imgCap3/33.png"
+                alt="">
+               
+                
+                      <img src="./imgCap3/34.png"
+                      alt="">
+                      <p class="text-center my-2 mb-5 font-italic">
+                        mouse dentro do quadrado
+                            </p>
+
+                            
+                        <img src="./imgCap3/35.png"
+                        alt="">
+                        <p class="text-center my-2 mb-5 font-italic">
+                          mouse fora do quadrado
+                              </p>
+
+                        <p>O exemplo seguinte é uma validação de um campo de formulário para CEP aplicada utilizando onblur, ou seja, quando o usuário termina de digitar a informação e deixa o campo. Além da tradicional mensagem de erro, trocaremos a cor da borda do campo para vermelho.</p>
+
+                        <p>
+                            O evento onfocus também deve ser usado – afinal, quando o usuário volta ao campo para resolver o problema, devemos apagar as referências ao erro cometido: a mensagem de erro some e a borda volta à sua cor original:
+
+                        </p>
+
+
+                              <img src="./imgCap3/36.png"
+                              alt="">
+                           
+
+                              <img src="./imgCap3/37.png"
+                              alt="">
+                              <p class="text-center my-2 mb-5 font-italic">
+                               
+Validação do cep  ^[0-9]{5}\-[0-9]{3}$
+                                    </p>
+                                    
+                                    <h2>DOM
+                                        (Document Object Model)
+                                        </h2>
+
+
+                                        <p>
+                                            Quando uma página web é carregada, o navegador cria um DOM da página. Essa estrutura é construída conforme o diagrama de objetos da imagem:
+                                        </p>
+
+                                        <img src="./imgCap3/38.png"
+                                        alt="">
+                                        <p class="text-center my-2 mb-5 font-italic">DOM</p>      
+                                        
+                          <p>
+                            Essa estrutura DOM do HTML pode ser acessada através de linguagens de programação, como o JavaScript.
+                            </p>  
+                            
+                         <p>
+                            Nesta estrutura, todos os elementos do HTML são definidos como objetos e a interface de programação é a própria aplicação de métodos e propriedades em cada objeto(tag).
+                            </p>   
+
+                        <p>
+                            
+Uma propriedade é o valor que pode ser acessado ou passado, como alterar o conteúdo de uma tag HTML.
+
+                        </p> 
+                        
+                        <p>
+                            Um método é uma ação realizada no objeto como deletar ou adicionar uma tag
+                        </p>
+
+                        <p>
+                            obs. veja que existe diferença em manipular ou acessar o conteúdo do objeto e adicionar ou deletar o objeto em si.
+                        </p>
+
+                        <p>
+                            Concluindo, para acessar qualquer elemento HTML na página, é necessário começar acessando o documento do objeto dentro DOM. Portanto, seguem os métodos document.getElementBy.
+                        </p>
+
+                        <p>
+                            Esse método pode utilizar do id, tag, ou classe do elemento HTML para acessá-lo: 
+                        </p>
+
+                        <img src="./imgCap3/39.png"
+                                        alt="">
+                                        <p class="text-center my-2 mb-5 font-italic">DOM</p>      
+                                        
+                <p>
+                    Os métodos como document.getElementBy acessam o objeto, como esclarecido, todavia, para que o conteúdo do objeto possa ser alterado, é necessário utilizar propriedades.
+                </p>
+
+                <p>
+                    A propriedade innerHTML é a maneira mais simples de acessar o conteúdo de qualquer elemento. Essa propriedade é útil para acessar ou substituir o conteúdo do elemento buscado pelo método document.getElementBy
+
+                </p>
+
+                <p>
+                    Segue um exemplo de uso do document.getElementeById(“id”).innerHTML
+                </p>
+
+                
+                <img src="./imgCap3/40.png"
+                alt="">
+                <p class="text-center my-2 mb-5 font-italic">Img retirada de www.w3schools.com
+                </p> 
+
+                <p>
+                    obs. Note que o método traz o objeto de id “demo” e altera seu conteúdo com a propriedade passada.
+                </p>
+
+
+                <h2 class="mt-5">
+                    caso queira se aprofundar mais em Javascript , experimente uma de nossas aulas experimentais, informe seus dados abaixo e te informamos.
+                </h2>
+                    
+                    <div class="d-flex flex-column justify-content-center ">
+                      <!-- Form -->
+                      <form class="p-5" id="form_email">
+                        <fieldset>
+                          <h1>Preencha os campos abaixos</h1>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Nome</label>
+                            <input type="text" id="nameInput" class="form-control" placeholder="Digite seu nome"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Email</label>
+                            <input type="text" id="emailInput" class="form-control" placeholder="Digite seu E-mail"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+                          <div class="mb-3">
+                            <label for="textInput" class="form-label">Celular</label>
+                            <input type="text" id="phoneInput" class="form-control" placeholder="Digite seu celular"
+                              style="color: var(--text-white); caret-color: var(--text-white);">
+                          </div>
+          
+                          <div class="mb-3">
+          
+                            <legend style="font-size: 20px;">Mensagem</legend>
+                            <fieldset>
+                              <textarea class="form-control" id="msgInput" aria-label="Digite sua mensagem"
+                                style="color: var(--text-white); caret-color: var(--text-white);"
+                                placeholder="Desejo fazer uma aula experimental"></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="fieldsetCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Consentimento com uso dos dados.
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="emailCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por email
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="whatsCheck">
+                              <label class="form-check-label" for="fieldsetCheck">
+                                Desejo ser respondido(a) por Whatsapp
+                              </label>
+                            </div>
+                          </div>
+                          <button class="btn text-white font700 mx-4 mt-4  p-2 elegant-button" style="width:30%">Enviar</button>
+                        </fieldset>
+                      </form>
+          
+                    </div>
+                  
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center p-3 text-white">
+        <p class="mt-3 mx-5 font800"> Fiap project</p>
+        <p class="mt-3 mx-5 font400"> All rights reserved Copyright© 2023</p>
+    </footer>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../../../js.js"></script>
+
+    
+</body>
+
+</html>
